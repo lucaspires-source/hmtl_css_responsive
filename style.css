@@ -6,7 +6,7 @@
 }
 
 
-body{
+body,button{
 
     font-family: 'Montserrat', sans-serif;
 }
@@ -48,8 +48,121 @@ text-decoration: none;
     justify-content: flex-end;
 }
 
+.presentation{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
 
+.introduction{
+    flex:1;
 
+}
+
+.intro-text h1{
+    font-size: 44px;
+    font-weight: 500;
+    background:  linear-gradient(to right, #494964,#6f6f89);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro-text p{
+    margin-top: 5px;
+    font-size: 22px;
+    color: #585772;
+}
+
+.cta{
+ display: flex;
+ 
+
+}
+.cta-select{
+    border:2px solid #c36cbb;
+    background:transparent;
+    color: #c36cbb;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 30px 0px 0px 30px;
+
+}
+
+.cta-add{
+    background: #c36cbb;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    border: 2px solid white;
+    color: white;
+    margin: 30px 0px 0px 30px;
+}
+.cta-add:hover{
+    background: transparent ;
+    color: #c36cbb;
+    border: 2px solid #c36cbb;
+    transition: 1.2s ease;
+}
+
+.cta-select:hover{
+    background: #c36cbb;
+    border: white;
+    color: white;
+    transition: 1.2s ease;
+}
+.cover{
+    flex: 1;
+    display: flex;
+	justify-content: center;
+	height: 60vh;
+}
+.cover img{
+    height: 50vh;
+    filter: drop-shadow(0px 5px 3px black);
+	animation: drop 1.5s ease;
+}
+.big-circle{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+@media screen and (max-width: 1024px) {
+	.presentation {
+		flex-direction: column;
+	}
+	.introduction {
+		margin-top: 5vh;
+		text-align: center;
+	}
+	.intro-text h1 {
+		font-size: 30px;
+	}
+	.intro-text p {
+		font-size: 18px;
+	}
+	.cta {
+		padding: 10px 0px 0px 0px;
+	}
+	.laptop-select {
+		bottom: 5%;
+		right: 50%;
+		width: 50%;
+		transform: translate(50%, 5%);
+	}
+	.cover img {
+		height: 80%;
+	}
+	.small-circle,
+	.medium-circle,
+	.big-circle {
+		opacity: 0.2;
+	}
+}
 
 
 
